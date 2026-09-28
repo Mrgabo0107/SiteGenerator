@@ -19,8 +19,10 @@ const CardsLayout = ({ data }) => {
                         {
                             description &&
                             (<header id="cards-introduction">
-                                <h1>{description.frontmatter.title}</h1>
-                                <p dangerouslySetInnerHTML={{ __html: description.html }} />
+                                <div
+                                    className="cards-introduction-content"
+                                    dangerouslySetInnerHTML={{ __html: description.html }}
+                                />
                             </header>
                             )
                         }
