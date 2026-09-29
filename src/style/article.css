@@ -428,3 +428,16 @@ only screen and (hover: none) and (pointer: coarse) {
         background-image: none;
     }
 }
+/* Fix for invisible text inside details elements */
+details {
+    color: var(--text-color) !important;
+}
+
+details:hover * {
+    color: var(--text-color) !important;
+}
+
+details summary {
+    color: var(--main-color);
+    font-weight: 600;
+}
