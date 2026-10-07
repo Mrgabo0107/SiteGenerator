@@ -1,4 +1,4 @@
-/* Cartes longues */
+/* Long cards */
 
 .long-card {
     position: relative;
@@ -41,4 +41,19 @@
     z-index: 3;
     width: 100%;
     margin: 0rem 0rem var(--in-card-margin) 0rem;
+}
+
+/* Introduction layout adjustments */
+
+#cards-introduction {
+    max-width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
+#cards-introduction img {
+    max-width: 100%;
+    height: auto;
 }

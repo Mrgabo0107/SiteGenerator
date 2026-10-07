@@ -92,7 +92,6 @@ const CardsLayout = ({ data, pageContext }) => {
                 let filtered = filterNodes(nodes, search, tags);
                 const description = nodes.filter(node => node.fields.slug === "")[0]
 
-                // Si la página corresponde a los miembros, ordenamos por slug (01_, 02_...)
                 const isMemberPage = pageContext?.pageName?.includes("membres") || 
                                      nodes.some(node => node.fields.collection?.includes("membres"));
 
